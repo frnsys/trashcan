@@ -2,13 +2,9 @@ class Person():
     """ a person is stateful and
     makes individual decisions based on
     personal utility functions and state"""
-    def __init__(self, name, utilities=None, state=None):
-        self.name = name
+    def __init__(self, utilities=None, state=None):
         self.utilities = utilities or {}
         self.state = state or {}
-
-    def __repr__(self):
-        return '{}: {}'.format(self.name, self.utilities)
 
     def evaluate(self, option, state):
         """scores an option based on utility functions and state"""
