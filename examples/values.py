@@ -1,6 +1,6 @@
 import math
-from option import Option
-from person import Person
+from trashcan.option import Option
+from trashcan.person import Person
 
 
 class Transportation(Option):
