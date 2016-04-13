@@ -52,3 +52,12 @@ We use heuristic thinking (i.e. "system 1" thinking) but we can also think more 
 Considering impersonal actions is tricky. Agents shouldn't exhaustively consider all possible actions by all possible other agents (that would blow up). Instead we can consider only the actions of "local" agents. For "local" we need a notion of "distance", which is not (necessarily) physical distance, but rather, the immediacy someone is in their sphere of influence (that is, whether or not their actions directly affect them).
 
 Though this reduces the number of impersonal actions an agent would need to consider, it still might be a considerable amount. We could also reduce all other agents to an "other" and have agents think of this aggregate other as a single entity. The agent could do a small-ish sample from the other and consider only their possible actions, then extrapolate that to the other as a whole.
+
+We might also want a way for norms to spread throughout a social network. We can use a basic imitation model, e.g. agents imitate or more positively value the actions of those who are very successful or just more successful (success as in they have a higher perceived utility) than they are. They may only noisily/imperfectly imitate actions.
+
+other things to capture:
+
+- communication and reputation
+- "promises", which could be something like a promise of payment or a threat of pain
+- trust - an edge attribute between people in a network, which is the confidence that the trustee will execute on a promise
+    - perhaps reputation is just the way trust diffuses through the network? (i.e. trust-by-proxy)
